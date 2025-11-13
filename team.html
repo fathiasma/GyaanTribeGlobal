@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team — Gyaan Tribe Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { 'primary':'#f8d003','secondary':'#000000' } } } }</script>
+</head>
+<body>
+  <header class="bg-dark-bg/95 text-light-text py-4">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">GYAAN TRIBE<span class="text-primary"> GLOBAL</span></a>
+      <nav class="space-x-6 hidden md:block">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-extrabold mb-8">Meet The Team</h1>
+    <p class="mb-8">Our core team is a small group of volunteers from different countries, united by a passion for youth empowerment and learning.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Team member 1 -->
+      <div class="bg-white p-6 rounded-xl card-shadow">
+        <div class="team-image-placeholder mb-4">AS</div>
+        <h3 class="text-xl font-bold">Krishna Bagri.</h3>
+        <p class="text-sm text-gray-600">Founder & CEO.</p>
+      </div>
+
+      <!-- Team member 2 -->
+      <div class="bg-white p-6 rounded-xl card-shadow">
+        <div class="team-image-placeholder mb-4">RK</div>
+        <h3 class="text-xl font-bold">Asma Ashraf.</h3>
+        <p class="text-sm text-gray-600">Co-Founder.</p>
+      </div>
+
+      <!-- Team member 3 -->
+      <div class="bg-white p-6 rounded-xl card-shadow">
+        <div class="team-image-placeholder mb-4">LM</div>
+        <h3 class="text-xl font-bold">Lerato Mashala.</h3>
+        <p class="text-sm text-gray-600">Co-Founder.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
+    <p>&copy; <span id="year"></span> Gyaan Tribe Global</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
